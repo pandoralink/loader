@@ -36,6 +36,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.vue$/,
+        use: [
+          "babel-loader",
+          {
+            loader: "vue-loader",
+            options: {
+              log: true,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
